@@ -21,7 +21,7 @@ if(continua == "1"){
                         let calculo = calculadora.question(" ");
 
 
-                        if(calculo != "+" &&  "-" && "*" && "/"){
+                        if(calculo != (calculo == "+") &&  (calculo == "-") && (calculo == "*") && (calculo == "/")){
 
                             console.log("\nOpção invalida!")
 
