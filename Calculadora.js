@@ -1,14 +1,14 @@
 import calculadora from 'readline-sync';
 
-let nome = calculadora.question("Qual seu nome? ");
+let nome = calculadora.question("\n\nQual seu nome? ");
 
 console.log("\nóla "+nome);
-console.log("Bem vindo a Plateforma de calculos!\n\n");
-let continua = calculadora.question(nome+" sé você deseja calcular digite 1\n"+"Senão dígite 2\n");
+console.log("Bem vindo a Plataforma de cálculos!\n\n");
+let continua = calculadora.question(nome+" Sé você deseja calcular digite 1\n"+"Senão digite qualquer tecla\n");
 
 if(continua == "1"){
     while(continua){
-                let numero1 = calculadora.question("\nDígite o primeiro número que você desesa calcular: ");
+                let numero1 = calculadora.question("\nDigite o primeiro número que você deseja calcular: ");
                 if(numero1 != Number(numero1)){
                     console.log("Somente numeros por gentileza.")
                 }else{
@@ -16,10 +16,10 @@ if(continua == "1"){
                     let numero2 = calculadora.question("\nDígite o segundo número que você desesa calcular: ");
 
                     if(numero2 != Number(numero2)){
-                        console.log("\nSomente numeros por gentileza.\n")
+                        console.log("\nSomente números por gentileza.\n")
                     }else{
-                        console.log("\nQual dos calculos abaixo voce gostaria de fazer?...");
-                        console.log("+ - Soma");
+                        console.log("\nQual dos cálculos abaixo você gostaria de fazer?...");
+                        console.log("+ - Adição");
                         console.log("- - Subtração");
                         console.log("* - Multiplicação");
                         console.log("/ - Divisão\n");
@@ -54,7 +54,7 @@ if(continua == "1"){
                                     break;
                                 };
                                 default:{
-                                    console.log("Opção invalida")
+                                    console.log("\nOpção invalida")
                                     break;
                                 }
     
@@ -64,16 +64,16 @@ if(continua == "1"){
                 }
                     let continuar =  calculadora.question("\nSé você deseja calcular digite 1 "+"\n"+"Sé você deseja encerar digite 2\n");
                     if(numero1 != Number(numero1)){
-                        console.log("Somente numeros por gentileza.")
+                        console.log("\nSomente números por gentileza.")
                     }else{
                         if(continuar == 1){
                             console.log("\n"+nome+", você optou por continuar.")
                         }else if(continuar == 2) {
-                        console.log("Obrigador por participar "+nome)
+                        console.log("\nObrigador por participar "+nome)
                         break;
                     } 
                 }
             }
-    }else if(continua == "2"){
-        console.log(nome+" você optou por finalizar a plataforma.");
-};
+    }else{
+        console.log("\n"+nome+" você optou por finalizar a plataforma.");
+}
