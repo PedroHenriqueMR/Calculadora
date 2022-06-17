@@ -16,10 +16,7 @@ if(continua == "1"){
                     let numero2 = calculadora.question("\nDígite o segundo número que você desesa calcular: ");
 
                     if(numero2 != Number(numero2)){
-
                         console.log("\nSomente numeros por gentileza.\n")
-                        break;
-
                     }else{
                         console.log("\nQual dos calculos abaixo voce gostaria de fazer?...");
                         console.log("+ - Soma");
